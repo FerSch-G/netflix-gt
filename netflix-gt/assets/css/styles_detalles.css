@@ -1,0 +1,289 @@
+@font-face {
+    font-family: 'N';
+    src: url(../../fonts/AvenirNextLTPro-Regular.otf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Net';
+    src: url(../../fonts/AvenirNextLTPro-Regular.otf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Netfli';
+    src: url(../../fonts/AvenirNextLTPro-Bold.otf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+body{
+    background: black;
+    color: white;
+}
+
+.video{
+    margin-left:-8px;
+    margin-top: 5px;
+}
+
+.recargando{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-family: 'Netfli';
+}
+
+.tree_items{
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+
+/* este esta funcionando para quitar las
+viñetas por defefcto que se etan colocando */
+.items{
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    /* justify-content: space-around; */
+    margin-left: -70px;
+}
+
+.item1{
+    color: green;
+    /* position: relative; */
+    /* overflow: hidden; */
+    /* margin-left: 0; */
+}
+
+.item2{
+    /* border: 1px solid orange; */
+    color: gray;
+    /* padding: 5 5 5 5; */
+}
+
+.item3{
+    color: gray;
+}
+
+.rig{
+    background: gray;
+    color: white;
+    margin-left: 7px;
+    border: none;
+}
+
+.g{
+    /* border: 1px solid red; */
+    color: white;
+    margin-left: -90px;
+}
+
+.actions{
+    text-align: center;
+}
+
+.button-play{
+    color: black;
+    /* border: 1px solid orange; */
+    background: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.button-down{
+    color: white;
+    margin-top: 5px;
+    /* border: 5px solid purple; */
+    background: gray;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.action1{
+    background: white;
+}
+
+.action2{
+    background: gray;
+    border: none;
+}
+
+.play::before {
+    /* border: 1px solid red; */
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+ .down::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 23px;
+    margin-right: 5px;
+ }
+
+ .play::before {
+    background: url('../../images/icons/play.svg');
+ }
+
+ .down::before {
+    background: url('../../images/icons/download.svg');
+ }
+
+ .information{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    justify-content: space-around;
+    text-align: justify;
+ }
+
+ .text6{
+    /* border: 1px solid red; */
+    margin-bottom: -20px;
+    color: gray;
+ }
+
+ .text5{
+    color: gray;
+ }
+
+ .navigation{
+    display: grid;
+    grid-auto-flow: column;
+    /* text-align: left; */
+    list-style: none;
+    margin-left: -40px;
+ }
+
+ .navigation-two{
+    margin-left: -105px;
+ }
+
+ .navigation-three{
+    margin-left: -135px;
+ }
+
+ a{
+    color: gray;
+ }
+
+ .navi-list::before {
+    /* border: 1px solid red; */
+    content: '';
+    display: flex;
+    width: 25px;
+    height: 25px;
+    /* margin-right: 5px; */
+}
+
+ .navi-calif::before {
+    content: '';
+    display: flex;
+    width: 25px;
+    height: 25px;
+    /* margin-right: 5px; */
+ }
+
+ .navi-comp::before {
+    content: '';
+    display: flex;
+    width: 25px;
+    height: 25px;
+    /* margin-right: 5px; */
+ }
+
+ .navi-list::before {
+     background: url('../../images/icons/plus.svg');
+    }
+    
+    .navi-calif::before {
+        background: url('../../images/icons/like.svg');
+    }
+    
+    .navi-comp::before {
+       background: url('../../images/icons/email-send.svg');
+    }
+
+    .list-content {
+        /* border: 1px solid red; */
+        white-space: nowrap;
+        /* overflow-x: auto; */
+        overflow-x: scroll;
+        scrollbar-color: gray transparent;
+    }
+    
+    .list-item {
+        display: inline-block;
+        margin-left: 10px;
+    }
+    
+    .list-item:first-child{
+        margin: 0;  
+    }
+    
+    .list {
+        /* border: 1px solid green; */
+        padding: 0 1em ;
+    }
+
+    .footer {
+        /* border: 1px solid red; */
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: black;
+        padding: 1em 0 0;
+     }
+    
+     .tab-list {
+        /* border: 1px solid green; */
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-auto-flow: column;
+        list-style: none;
+        /* color: #6e6e6e; */
+        padding-bottom: 1em;
+     }
+    
+     .tab-list a {
+        color: #6e6e6e;
+     }
+    
+     .tab-item {
+        /* border: 1px solid purple; */
+        text-align: center;
+        font-size: .9em;
+     }
+    
+     .tab-item svg {
+        display: block;
+        /* border: 1px solid red; */
+        margin: auto;
+     }
+    
+     .tab-item path {
+        fill: #6e6e6e;
+    
+     }
+    
+     .tab-item :hover :is(path, span) {
+        fill: white;
+        color: white;
+     }
